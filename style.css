@@ -150,9 +150,8 @@ header {
 }
 
 .hero-section form {
-    /* background-color: red; */
-    margin-top: 2rem;
     width:400px;
+    margin: 2rem auto;
 }
 
 .hero-section form input {
