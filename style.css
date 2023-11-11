@@ -152,6 +152,7 @@ header {
 .hero-section form {
     /* background-color: red; */
     margin-top: 2rem;
+    width:400px;
 }
 
 .hero-section form input {
