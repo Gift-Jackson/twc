@@ -13,7 +13,7 @@
 
 :root {
     --primary-color: #6c53f7;
-    --secondary-color: #eee;
+    --secondary-color: #f9f9f9;
     --tertiary-color: #121212;
     --bg-color: #fefefe;
     --text-color: #4a4a4a;
@@ -65,6 +65,7 @@ header {
 
 .nav-link:hover::before {
     width: 100%;
+    background-color: coral;
 }
 
 .nav-link:hover {
@@ -92,7 +93,8 @@ header {
 }
 
 .header-btn:hover .text {
-    color: var(--bg-color);
+    /* color: var(--bg-color); */
+    color: coral;
 }
 
 .header-btn::before {
@@ -124,6 +126,12 @@ header {
 
 .hero-section h1 {
     font-size: clamp(3.125rem, 2.2321rem + 2.8571vw, 4.375rem);
+    background: linear-gradient(45deg, var(--tertiary-color) 30%, coral 60%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 100%;
+    text-transform: capitalize;
 }
 
 @keyframes text {
@@ -142,8 +150,8 @@ header {
 }
 
 .hero-section form {
-    width: 400px;
-    margin: 2rem auto;
+    /* background-color: red; */
+    margin-top: 2rem;
 }
 
 .hero-section form input {
@@ -291,10 +299,12 @@ form input.error::placeholder {
 
 .toggle.active::before {
     transform: translateY(0) rotate(45deg);
+    background-color: coral;
 }
 
 .toggle.active::after {
     transform: translateY(0) rotate(-45deg);
+    background-color: coral;
 }
 
 
@@ -364,6 +374,9 @@ form input.error::placeholder {
         /* background-color: var(--secondary-color); */
         margin-bottom: 2rem;
         border-radius: 50px;
+    }
+    .menu nav ul a:hover{
+        color: coral;
     }
 
     .menu .header-btn{

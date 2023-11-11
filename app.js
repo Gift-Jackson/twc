@@ -1,6 +1,11 @@
 const input = document.querySelector("#email");
 const joinBtn = document.querySelector(".form-btn");
 const errorMsg = document.querySelector(".errorMsg");
+const form = document.querySelector("form");
+
+form.addEventListener("click", (e) => {
+    e.preventDefault();
+});
 
 joinBtn.addEventListener("click", () => {
     if (input.value === "") {
