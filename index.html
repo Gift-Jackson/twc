@@ -9,6 +9,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
+    <!-- WAITLIST API -->
+    <script src="https://getlaunchlist.com/js/widget-diy.js" defer></script>
 </head>
 
 <body>
@@ -16,6 +18,7 @@
         <a href="#">
             <img class="logo" src="assets/twc_logo.png" alt="twc_logo">
         </a>
+        <!-- <h3>TWC <span class="mark">.</span></h3> -->
 
         <div class="right-header">
             <a class="nav-link" href="#">About Us</a>
@@ -44,12 +47,12 @@
                 It is a platform that allows you to connect with other tech enthusiasts</p>
 
             <!-- FORM -->
-            <form>
+            <form class="launchlist-form" action="https://getlaunchlist.com/s/ixyHKE" method="POST">
                 <div class="errorMsg">
                     <p>Must enter e-mail first!</p>
                 </div>
 
-                <input type="email" id="email" placeholder="E-mail Address">
+                <input type="email" id="email" name="email" placeholder="E-mail Address">
                 <button type="submit" class="form-btn">
                     <span>Join Waitlist</span>
                     <span class="material-symbols-outlined icon text">arrow_forward</span>
@@ -79,6 +82,7 @@
 
     <!-- JAVASCRIPT -->
     <script src="app.js"></script>
+    <script src="waitlist.js"></script>
 </body>
 
 </html>
